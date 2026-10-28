@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXE BOUTIQUE - Standard Edition</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#0a0a0a;color:#fff}
+.header{background:#000;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #222}
+.logo{font-size:22px;letter-spacing:3px;font-weight:900}.logo b{color:#d4af37}
+.filter-bar{padding:20px 5%;display:flex;gap:10px;overflow-x:auto;background:#111}
+.filter-btn{border:1px solid #333;color:#aaa;background:transparent;padding:8px 18px;border-radius:20px;font-size:11px;cursor:pointer;white-space:nowrap}
+.filter-btn.active{background:#d4af37;color:#000;border-color:#d4af37;font-weight:700}
+.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200');background-size:cover;height:60vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:40px;margin-bottom:10px}.hero h1 b{color:#d4af37}
+.hero p{color:#ccc;letter-spacing:3px;font-size:12px}
+.products{padding:30px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+@media(max-width:768px){.products{grid-template-columns:repeat(2,1fr)}}
+.card{background:#151515;border:1px solid #222;border-radius:8px;overflow:hidden;transition:0.3s}
+.card:hover{border-color:#d4af37;transform:translateY(-5px)}
+.card img{width:100%;height:250px;object-fit:cover;display:block}
+.card-body{padding:12px}
+.card-body h3{font-size:13px;margin-bottom:4px}
+.card-body span{font-size:9px;color:#777;letter-spacing:1px;text-transform:uppercase}
+.price{color:#d4af37;font-weight:700;font-size:13px;margin:8px 0;display:block}
+.order-btn{background:transparent;border:1px solid #d4af37;color:#d4af37;width:100%;padding:9px;font-size:10px;letter-spacing:1px;text-align:center;text-decoration:none;display:block;transition:0.3s}
+.order-btn:hover{background:#d4af37;color:#000}
+.footer{text-align:center;padding:25px;color:#555;font-size:10px;border-top:1px solid #1a1a1a;line-height:18px}
+.w-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;text-decoration:none;font-weight:900;box-shadow:0 5px 15px rgba(0,0,0,0.5)}
+</style>
+</head>
+<body>
+<div class="header"><div class="logo"><b>LUXE</b> BOUTIQUE</div><div style="font-size:9px;color:#666">STANDARD EDITION</div></div>
+<div class="hero"><div><p>STANDARD COLLECTION 2026</p><h1>Luxury <b>Redefined</b></h1><p style="margin-top:15px">12 Exclusive Designs - Premium Quality</p></div></div>
+<div class="filter-bar">
+<button class="filter-btn active">ALL</button>
+<button class="filter-btn">ABAYA</button>
+<button class="filter-btn">BRIDAL</button>
+<button class="filter-btn">SAREE</button>
+<button class="filter-btn">WESTERN</button>
+</div>
+<div class="products">
+<div class="card"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400"><div class="card-body"><h3>Noir Velvet Abaya</h3><span>LUXURY ABAYA</span><b class="price">Rs. 8,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Noir%20Velvet%20Abaya" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=400"><div class="card-body"><h3>Golden Bridal Lehenga</h3><span>BRIDAL</span><b class="price">Rs. 24,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Golden%20Bridal%20Lehenga" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=400"><div class="card-body"><h3>Beige Silk Saree</h3><span>SAREE</span><b class="price">Rs. 12,900</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Beige%20Silk%20Saree" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400"><div class="card-body"><h3>Midnight Black Gown</h3><span>WESTERN</span><b class="price">Rs. 18,000</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Midnight%20Black%20Gown" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400"><div class="card-body"><h3>Royal Gold Kurta</h3><span>PRET</span><b class="price">Rs. 15,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Royal%20Gold%20Kurta" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400"><div class="card-body"><h3>Champagne Kurta Set</h3><span>DAILY LUXURY</span><b class="price">Rs. 6,900</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Champagne%20Kurta%20Set" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"><div class="card-body"><h3>Black Velvet Dress</h3><span>WESTERN</span><b class="price">Rs. 9,900</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Black%20Velvet%20Dress" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=400"><div class="card-body"><h3>Royal Black Lehenga</h3><span>BRIDAL</span><b class="price">Rs. 28,000</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Royal%20Black%20Lehenga" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=400"><div class="card-body"><h3>Ivory White Saree</h3><span>SAREE</span><b class="price">Rs. 14,200</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Ivory%20White%20Saree" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400"><div class="card-body"><h3>Embroidered Abaya</h3><span>ABAYA</span><b class="price">Rs. 11,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Embroidered%20Abaya" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1594631252845-29fc4cc560c5?w=400"><div class="card-body"><h3>Golden Silk Dress</h3><span>WESTERN</span><b class="price">Rs. 16,800</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Golden%20Silk%20Dress" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=400"><div class="card-body"><h3>Black & Gold Saree</h3><span>SAREE</span><b class="price">Rs. 19,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20Black%20and%20Gold%20Saree" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+</div>
+<div class="footer">LUXE BOUTIQUE STANDARD © 2026<br>Designed by Waqas Ali - Okara Pakistan - 03716649231<br>12 Products | Category Filter | WhatsApp Ordering | Black & Gold Theme</div>
+<a href="https://wa.me/923716649231?text=Salam%20LUXE%20Standard!" class="w-float">W</a>
+</body>
+                    </html>
